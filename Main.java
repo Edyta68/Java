@@ -30,6 +30,7 @@ public class Main {
     System.out.println("Suma to: "+(a+b));
     System.out.println("Ró¿nica to: "+(a-b));
     System.out.println("Iloczyn to: "+(a*b));
+    pobierz.close();
      
     	   
     //  				ZADANIE 5
@@ -38,11 +39,11 @@ public class Main {
     int c;
     c = pobierz2.nextInt();
     System.out.println("Liczba podniesiona do kwadratu to: "+(c*c));
-    
+    pobierz2.close();
     	   
    //  				  ZADANIE 6
     int[] tablica = {1, 5, 76, 93, 45, 33};
-	for (int i=0; i<6; i++)
+	for (int i=0; i<tablica.length; i++)
 		System.out.println(tablica[i]);
 	
     }

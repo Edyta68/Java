@@ -17,7 +17,7 @@ public class L2 {
 	         System.out.println("Liczba jest nieparzysta");
 	   else
 	         System.out.println("Liczba jest parzysta");
-	  
+	  pobierz3.close();
     	   
 	  //   				ZADANIE 2 
         System.out.println("Podaj liczbê: ");
@@ -32,6 +32,7 @@ public class L2 {
 			System.out.printf("\n %d jest liczb¹ nieparzyst¹", o);	
         break;         
         }
+	pobierz4.close();
 	  
 
 	   //  			ZADANIE 3 II
@@ -49,6 +50,7 @@ public class L2 {
   	 		System.out.println("Podaj liczbê: ");
   	 		Scanner pobierz5 = new Scanner(System.in);
   	 		f = pobierz5.nextInt();  
+			pobierz5.close();
   	 		suma += f;
   	 		if (f == 0){
   	 			System.out.printf("Suma wynosi: %d ", +suma); 
@@ -65,7 +67,8 @@ public class L2 {
        if (e >=1 && e <10)
              System.out.println("Liczba mieœci siê w zakresie");
        else
-             System.out.println("Liczba jest spoza zakresu"); 	   
+             System.out.println("Liczba jest spoza zakresu"); 	
+	pobierz8.close();   
       
     
 	   //				ZADANIE 6 II
@@ -73,8 +76,9 @@ public class L2 {
 	   while (true) {
            System.out.println("Podaj liczbê: ");
            Scanner pobierz5 = new Scanner(System.in);
-           g = pobierz5.nextInt();  
-           if (f == 5 || f ==0)
+           g = pobierz5.nextInt();
+	   pobierz5.close();  
+           if (g == 5 || g ==0)
         	   break;
          }
        
@@ -86,5 +90,6 @@ public class L2 {
 	   u = pobierz10.nextInt();
 	   String[] sprawdz = { "parzysta", "nieparzysta" };
 	   System.out.println(u + " jest " + sprawdz[u % 2]);
+	   pobierz10.close();
       } 
 }
